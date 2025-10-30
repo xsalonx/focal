@@ -112,10 +112,9 @@ python -m focal.models.gan.gan \
 
 `focal/models/approx` hosts deterministic regressors, VAEs, and enhancer stacks that first predict compressed shower descriptors and then reconstruct calorimeter images via physics-based decoders. These are useful for rapid ablation studies or combining with diffusion enhancers located in `focal/models/approx/diffusion` and `focal/models/approx/enhancer`.
 
-### Flow-based and latent diffusion experiments
+### Flow-based experiments
 
 - `focal/models/normflow/normflow.py` implements normalizing flows trained on log-transformed responses and supports temperature-based sampling during evaluation.
-- `focal/models/latent-diffusion` and `focal/models/vq-diffusion` contain exploratory notebooks extending diffusion models into latent or vector-quantized spaces for richer generative priors.
 
 ### SLURM integration
 
